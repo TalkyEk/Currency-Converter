@@ -1,0 +1,43 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+#convertator {
+    display: flex;
+    justify-content: center;
+}
+#main {
+    background: rgb(250, 187, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+#get {
+    background: rgba(252, 145, 255, 0.71);
+    border: 0;
+    color:#111;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight:700;
+    padding: 5px 0px;
+    cursor:pointer;
+}
+input[type="number"]{
+    border: 0;
+    width:100px;
+    font-family: "Open sans", sans-serif;
+    font-size: 16px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+}
+#selin , #selout {
+    border: 0;
+    width:70px;
+    font-family: "Open sans", sans-serif;
+    font-size: 16px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+}
