@@ -32,7 +32,7 @@ function count() {
                 const element = data.filter(l => l.ccy === selin.value);
                 const uah = input.value;
                 const course = element[0].buy;
-                const result = uah / course;
+                const result = uah * course;
                 output.value = parseInt(result * 100) / 100;
             }
         })
